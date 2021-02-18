@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="gridPane" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.SaveToFileController"
+            prefHeight="400.0" prefWidth="600.0" hgap="10" vgap="10">
+
+<Label text="Játékosok mentése" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+<CheckBox fx:id="savePlayersCheckbox" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+<Label text="Játszmák mentése" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+<CheckBox fx:id="saveGamesCheckbox" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+<Label text="Ranglista mentése" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+<CheckBox fx:id="saveRanglistCheckbox" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+<Label text="Játékosok fájl mentési helye: " GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+<Button text="Tallózás..." GridPane.rowIndex="3" GridPane.columnIndex="1" onAction="#openFileChooserPlayer"/>
+<Label text="Játszmák fájl mentési helye: " GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+<Button text="Tallózás..." GridPane.rowIndex="4" GridPane.columnIndex="1" onAction="#openFileChooserGame"/>
+<Label text="Ranglista fájl mentési helye: " GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+<Button text="Tallózás..." GridPane.rowIndex="5" GridPane.columnIndex="1" onAction="#openFileChooserRanglist"/>
+<Button text="Mégse" GridPane.rowIndex="6" GridPane.columnIndex="0" onAction="#closeSaveToFileWindow"/>
+<Button text="Mentés" GridPane.rowIndex="6" GridPane.columnIndex="1" onAction="#saveToFile"/>
+<Label fx:id="messageLabel" GridPane.rowIndex="7" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+
+</GridPane>

@@ -1,0 +1,8 @@
+#play{
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}
+#separator *.line {
+-fx-border-style: solid;
+-fx-border-width: 5px;
+}
